@@ -1,0 +1,120 @@
+/* Reset and base styling */
+/* Import our helvetica font */
+@font-face {
+    font-family: 'Helvetica regular';
+    src: url('../fonts/Helvetica/HelveticaNowDisplay-Black.ttf') format('truetype');
+  }
+
+  /* Hypertext animation */
+  @keyframes example {
+    from {color: #fff;}
+    to {color: red;}
+  }
+  /* change hyperlink handling */
+  a{ 
+    color: inherit; 
+    text-decoration: none;
+    } 
+  a:hover {
+        color: red;
+
+        animation-name: example;
+        animation-duration: 0.5s;
+    }
+
+  /* Main divider changes*/
+  body {
+    margin: 0;
+    font-family: "Helvetica regular", sans-serif;
+    }
+  
+  header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    }
+  /* Sales Header */
+  .sales-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1a1a1a;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Space flexboxes evently for a responsive website */
+    justify-content: space-evenly;
+    }
+  .sales-header div {
+    padding: 5px;
+    }
+  .salesText{   
+    font-family: "Helvetica regular", sans-serif;
+    color: #fff;
+    }
+
+  /* Align logo to center and add padding */
+  .logo1AAX{
+    width: 50%;
+    align-items: center;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    }
+  
+  /* change banner and align text to center */
+  .bannerImage{
+    /* text 100% to fill page */
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+
+    }
+  .bannerContainer {
+    position: relative;
+    /* Adjust container -50px to move closer to image at top */
+    top: -50px;
+    }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    font-size: 2em; 
+    text-align: center;
+    font-family: 'Helvetica regular', sans-serif;
+    }
+
+  .bannerText{
+    font-size: 100%;
+    /* Add stroke text effecct */
+    text-shadow:
+    -5px -5px 0px black,  
+    1px -5px 0px black,
+    -1px 1px 0px black,
+    1px 1px 0px black; /* Stroke effect */
+    font-family: 'Helvetica regular', sans-serif;
+    }
+  /* footer handling */
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px;
+    /* flexbox handling and even spacing to avoid centering*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    }
+
+
